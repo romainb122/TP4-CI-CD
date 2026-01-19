@@ -9,6 +9,10 @@ class TestSimpleMath(unittest.TestCase):
         self.assertEqual(SimpleMath.addition(-1, 1), 0)
         self.assertEqual(SimpleMath.addition(0, 0), 0)
 
+    def test_soustraction(self):
+        self.assertEqual(SimpleMath.soustraction(5, 3), 2)
+        self.assertEqual(SimpleMath.soustraction(0, 0), 0)
+        self.assertEqual(SimpleMath.soustraction(-1, 1), -2)
 
 if __name__ == "__main__":
     unittest.main()
